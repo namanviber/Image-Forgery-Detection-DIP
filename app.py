@@ -135,7 +135,7 @@ if image_file is not None:
     pred = predict(content)
     pred = pred[0]
 
-    if pred >= 0.5:
+    if pred >= 0.6:
         st.success(f"This is a real image\n\nProbability of input image to be real is {pred * 100:.2f} %")
     else:
         st.error(f"This is a potentially forged image\n\nProbability of input image to be fake is {(1 - pred) * 100:.2f} %")
