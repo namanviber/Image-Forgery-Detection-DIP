@@ -99,6 +99,7 @@ def highlight(img, mask):
 
     # Resize the original image using OpenCV
     img = cv2.resize(img, (512, 512))
+    img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
 
     # Create an RGBA version of the original image
     original_array_rgba = np.concatenate([img, np.full(img.shape[:-1] + (1,), 255, dtype=np.uint8)], axis=-1)
