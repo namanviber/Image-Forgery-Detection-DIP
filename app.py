@@ -8,7 +8,7 @@ import io
 
 # Function for ela
 def convert_to_ela_image(image, quality):
-    temp_filename = 'temp_file.jpg'
+    temp_filename = 'temp.jpg'
     image.save(temp_filename, 'JPEG', quality=quality)
     temp_image = Image.open(temp_filename)
 
@@ -99,6 +99,7 @@ def highlight(img, mask):
 
     # Resize the original image using OpenCV
     img = cv2.resize(img, (512, 512))
+    img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
 
     # Create an RGBA version of the original image
     original_array_rgba = np.concatenate([img, np.full(img.shape[:-1] + (1,), 255, dtype=np.uint8)], axis=-1)
@@ -134,7 +135,7 @@ if image_file is not None:
     pred = predict(content)
     pred = pred[0]
 
-    if pred >= 0.5:
+    if pred >= 0.6:
         st.success(f"This is a real image\n\nProbability of input image to be real is {pred * 100:.2f} %")
     else:
         st.error(f"This is a potentially forged image\n\nProbability of input image to be fake is {(1 - pred) * 100:.2f} %")
