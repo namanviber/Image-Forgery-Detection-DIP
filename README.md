@@ -1,9 +1,11 @@
 # Image Forgery Detection Project 🖼️🔍
 
 ## Authors
-- **Naman Jain**
-- **Dhaval Pathak**
-- **Parinita Singh**
+| Name | GitHub Profile |
+| :--- | :--- |
+| **Naman Jain** | [@namanviber](https://www.github.com/namanviber) |
+| **Dhaval Pathak** | [@Dhaval-pathak](https://github.com/Dhaval-pathak) |
+| **Parinita Singh** | [@parinita-singh](https://github.com/parinita-singh) |
 
 **Affiliation**: Computer Science Department, BML Munjal University, Gurgaon, Haryana, India.
 
