@@ -1,13 +1,7 @@
 # Image Forgery Detection Project 🖼️🔍
 
-## Authors
-| Name | GitHub Profile |
-| :--- | :--- |
-| **Naman Jain** | [@namanviber](https://www.github.com/namanviber) |
-| **Dhaval Pathak** | [@Dhaval-pathak](https://github.com/Dhaval-pathak) |
-| **Parinita Singh** | [@parinita-singh](https://github.com/parinita-singh) |
-
-**Affiliation**: Computer Science Department, BML Munjal University, Gurgaon, Haryana, India.
+## About
+This project is an advanced deep learning solution designed to identify and localize digital manipulations in images. By leveraging Convolutional Neural Networks (CNNs) and digital image processing techniques like Error Level Analysis (ELA) and Spatial Rich Models (SRM), the system can classify images as authentic or forged and highlight specifically tampered regions. 
 
 ---
 
@@ -19,18 +13,20 @@ In the digital age, image manipulation, particularly copy-move forgery, poses a 
 ---
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Related Work](#related-work)
-3. [Methodology](#methodology)
+1. [About](#about)
+2. [Introduction](#introduction)
+3. [Related Work](#related-work)
+4. [Methodology](#methodology)
     - [Dataset](#dataset)
     - [Vanilla CNN Model](#vanilla-cnn-model)
     - [Dual U-Net Model](#dual-unet-model)
-4. [Results](#results)
+5. [Results](#results)
     - [Vanilla CNN Model Results](#vanilla-cnn-model-results)
     - [Dual U-Net Model Results](#dual-unet-model-results)
-5. [Conclusion](#conclusion)
-6. [Project Structure](#-project-structure)
-7. [Getting Started](#-getting-started)
+6. [Conclusion](#conclusion)
+7. [Project Structure](#-project-structure)
+8. [Getting Started](#-getting-started)
+9. [Authors](#authors)
 
 ---
 
@@ -91,4 +87,10 @@ This project offers a reliable solution for verifying digital image authenticity
 3. `streamlit run app.py`
 
 ---
-🛡️ *Ensuring Digital Integrity with AI.*
+
+## Authors
+| Name | GitHub Profile |
+| :--- | :--- |
+| **Naman Jain** | [@namanviber](https://www.github.com/namanviber) |
+| **Dhaval Pathak** | [@Dhaval-pathak](https://github.com/Dhaval-pathak) |
+| **Parinita Singh** | [@parinita-singh](https://github.com/parinita-singh) |
